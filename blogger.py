@@ -26,6 +26,7 @@ for ip in proxies:
             # print(ip, 'working')
         except:
             pass
-
+open('yash.txt').close()
+open('user_agents.txt').close()
 api = "https://api.telegram.org/bot5317123296:AAE7U6qJdnkhL19_AZfKiDWuq-752j0VGe8/sendmessage?chat_id=-1001677829704&text=Finished"
 b = requests.get(api)
