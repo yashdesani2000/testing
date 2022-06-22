@@ -1,1 +1,1 @@
-yash: python testing.py
+yash: python blogger.py
