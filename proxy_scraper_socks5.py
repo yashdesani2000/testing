@@ -33,6 +33,7 @@ def socks5():
                                        
 
 while True:
+        requests.get('https://api.telegram.org/bot5317123296:AAE7U6qJdnkhL19_AZfKiDWuq-752j0VGe8/sendmessage?chat_id=-1001677829704&text=hiii')
         proxy.clear()
         print('refreshed')
         socks5()
