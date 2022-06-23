@@ -9,7 +9,7 @@ proxy = []
 # print(r)
 
 def socks5():   
-        url = 'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http'
+        url = 'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=https'
         s = requests.Session()
         res = s.get(url).text.splitlines()
         for i in res:
