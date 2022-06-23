@@ -1,1 +1,1 @@
-yash: python proxy_scraper_socks5.py
+yash: python y.py
