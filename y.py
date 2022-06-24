@@ -24,7 +24,7 @@ def socks5():
                 if user_agent != None:
                         try:
                             s.get(url=url2, headers=header, proxies={'https': 'socks5://'+ip, 'http': 'socks5://'+ip}, timeout=5)
-                            print(p, i, 'working')
+                            print(p, ip, 'working')
                         except:
                                         pass
                                        
