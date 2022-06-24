@@ -9,7 +9,7 @@ proxy = []
 # print(r)
 
 def socks5():   
-        url = 'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=https'
+        url = 'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5'
         s = requests.Session()
         res = s.get(url).text.splitlines()
         for i in res:
@@ -23,7 +23,7 @@ def socks5():
             
                 if user_agent != None:
                         try:
-                            s.get(url=url2, headers=header, proxies={'https': ip, 'http': ip}, timeout=5)
+                            s.get(url=url2, headers=header, proxies={'https': 'socks5://'+ip, 'http': 'socks5://'+ip}, timeout=5)
                             #print(p, i, 'working')
                         except:
                                         pass
