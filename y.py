@@ -24,12 +24,13 @@ def socks5():
                 if user_agent != None:
                         try:
                             s.get(url=url2, headers=header, proxies={'https': 'socks5://'+ip, 'http': 'socks5://'+ip}, timeout=5)
-                            #print(p, i, 'working')
+                            print(p, i, 'working')
                         except:
                                         pass
                                        
 
 while True:
+        requests.get('https://api.telegram.org/bot5501050196:AAHggL5bXIlyRtCGukPY70huqD-k_OKgc-0/sendmessage?chat_id=1124985872&text=refreshed')
         proxy.clear()
         socks5()
  
