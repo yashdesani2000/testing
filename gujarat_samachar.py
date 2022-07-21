@@ -55,14 +55,14 @@ def gs_main_edition():
                 except:
                     pass
 
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
     except:
         pass
 
@@ -100,14 +100,14 @@ def gs_district_edition():
                 except:
                     pass
             
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
     except:
         pass
 
@@ -146,14 +146,14 @@ def gs_magazines():
                     images.append(BytesIO(res.content))
                 except:
                     pass
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
         elif day == 1:
             images.clear()
@@ -171,14 +171,14 @@ def gs_magazines():
                     images.append(BytesIO(res.content))
                 except:
                     pass
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
         elif day == 2:
             images.clear()
@@ -196,14 +196,14 @@ def gs_magazines():
                     images.append(BytesIO(res.content))
                 except:
                     pass
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
         elif day == 3:
             images.clear()
@@ -221,14 +221,14 @@ def gs_magazines():
                     images.append(BytesIO(res.content))
                 except:
                     pass
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
         elif day == 4:
             images.clear()
@@ -246,14 +246,14 @@ def gs_magazines():
                     images.append(BytesIO(res.content))
                 except:
                     pass
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
         elif day == 5:
             images.clear()
@@ -271,14 +271,14 @@ def gs_magazines():
                     images.append(BytesIO(res.content))
                 except:
                     pass
-            f = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Gujarat Samachar\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Gujarat Samachar\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
     except:
         pass
 

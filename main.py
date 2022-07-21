@@ -11,7 +11,7 @@ sandesh_today = ['2022-07-21']
 while True:
     if gs_today[0] == gs_date():
         gs_today.clear()
-        n = open('stickers\\gujarat_samachar.webp', 'rb')
+        n = open('gujarat_samachar.webp', 'rb')
         file = {'sticker': n}
         s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendSticker?chat_id=1124985872', files=file)
         n.close()
@@ -23,7 +23,7 @@ while True:
         pass
     if sandesh_today[0] == sandesh_date():
         sandesh_today.clear()
-        n = open('stickers\\sandesh.webp', 'rb')
+        n = open('sandesh.webp', 'rb')
         file = {'sticker': n}
         s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendSticker?chat_id=1124985872', files=file)
         n.close()

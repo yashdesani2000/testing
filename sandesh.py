@@ -44,14 +44,14 @@ def sandesh_main_edition():
                 except:
                     pass    
 
-            f = open('Sandesh\\'+pdf_name+'.pdf', 'wb')
+            f = open(pdf_name+'_'+str(sandesh_date())+'.pdf', 'wb')
             f.write(img2pdf.convert(images))
             f.close()
-            n = open('Sandesh\\'+pdf_name+'.pdf', 'rb')
+            n = open(pdf_name+'_'+str(sandesh_date())+'.pdf', 'rb')
             file = {'document': n}
             s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
             n.close()
-            os.remove('Sandesh\\'+pdf_name+'.pdf')
+            os.remove(pdf_name+'_'+str(sandesh_date())+'.pdf')
     except:
         pass
 
@@ -82,14 +82,14 @@ def sandesh_magazines():
                     except:
                         pass    
 
-                f = open('Sandesh\\'+pdf_name+'.pdf', 'wb')
+                f = open(pdf_name+'_'+str(sandesh_date())+'.pdf', 'wb')
                 f.write(img2pdf.convert(images))
                 f.close()
-                n = open('Sandesh\\'+pdf_name+'.pdf', 'rb')
+                n = open(pdf_name+'_'+str(sandesh_date())+'.pdf', 'rb')
                 file = {'document': n}
                 s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
                 n.close()
-                os.remove('Sandesh\\'+pdf_name+'.pdf')
+                os.remove(pdf_name+'_'+str(sandesh_date())+'.pdf')
             else:
                 pass    
     except:
