@@ -33,7 +33,7 @@ def sandesh_main_edition():
             res = s.get(url_list[i]).json()   
             total_pages = res['data']['sub']
             pdf_name = res['query']['slug']
-            print(len(total_pages),pdf_name)
+            #print(len(total_pages),pdf_name)
             images = []
 
             for i in range(len(total_pages)):
