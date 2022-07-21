@@ -1,1 +1,1 @@
-yash: python y.py
+worker: python main.py
