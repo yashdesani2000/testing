@@ -1,15 +1,17 @@
 from gujarat_samachar import *
 from sandesh import *
 import requests
+from datetime import *
 
 s = requests.Session()
 
+d = date.today()
 
 gs_today = ['2022-07-21']
 sandesh_today = ['2022-07-21'] 
 
 while True:
-    s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872&text=hii')
+    s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872&text='+str(d))
     if gs_today[0] == gs_date():
         gs_today.clear()
         n = open('stickers\\gujarat_samachar.webp', 'rb')
