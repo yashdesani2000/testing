@@ -1,7 +1,8 @@
 from gujarat_samachar import *
 from sandesh import *
-import requests
 from datetime import *
+import requests, time
+
 
 s = requests.Session()
 
@@ -10,8 +11,11 @@ gs_today = ['2022-07-22']
 sandesh_today = ['2022-07-22'] 
 
 while True:
-    s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872&text='+str(date.today()))
-    if gs_today[0] == gs_date():
+    gs = gs_date()
+    sandesh = sandesh_date()
+    # print(gs, sandesh, gs_today[0], sandesh_today[0])
+    s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872&text='+str(gs)+' , '+str(sandesh)+' , '+str(gs_today[0])+' , '+str(sandesh_today[0]))
+    if gs_today[0] == gs:
         gs_today.clear()
         n = open('gujarat_samachar.webp', 'rb')
         file = {'sticker': n}
@@ -23,7 +27,7 @@ while True:
         gs_today.append(date.today()+timedelta(1))
     else:
         pass
-    if sandesh_today[0] == sandesh_date():
+    if sandesh_today[0] == sandesh:
         sandesh_today.clear()
         n = open('sandesh.webp', 'rb')
         file = {'sticker': n}
@@ -36,3 +40,4 @@ while True:
         sandesh_today.append(date.today()+timedelta(1))
     else:
         pass
+    time.sleep(60)
