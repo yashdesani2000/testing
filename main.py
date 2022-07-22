@@ -1,6 +1,7 @@
 from gujarat_samachar import *
 from sandesh import *
 import requests
+from datetime import *
 
 s = requests.Session()
 
@@ -9,7 +10,7 @@ gs_today = ['2022-07-22']
 sandesh_today = ['2022-07-22'] 
 
 while True:
-    s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872?text='+str(date.today()))
+    s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872&text='+str(date.today()))
     if gs_today[0] == gs_date():
         gs_today.clear()
         n = open('gujarat_samachar.webp', 'rb')
