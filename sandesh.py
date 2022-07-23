@@ -1,8 +1,9 @@
-import requests, datetime, os
+import requests, os
 from io import BytesIO
 import img2pdf
+from datetime import *
 
-today = datetime.date.today()
+today = date.today()
 
 editions = ['ahmedabad','ahmedabad-east','city-life','zalawad---ahmedabad-dist','gandhinagar','kheda','mehsana','sabarkantha','patan','surat','surat-dist','valsad','navsari','rajkot','halar','junagadh','saurashtra','vadodara','vadodara-dist','panchmahal---dahod','bharuch','bhuj','bhavnagar']
 
@@ -15,8 +16,8 @@ magazines_url_list = []
 s = requests.Session()
 
 def sandesh_date():
-    res = s.get('https://wapi.sandesh.com/api/v1/tithi').json()
-    sandesh_date = res['data']['date']
+    res = s.get('https://wapi.sandesh.com/api/v1/e-paper?slug=ahmedabad&date='+str(date.today()+timedelta(1))).json()
+    sandesh_date = res['data']['main'][0]['date']
     return sandesh_date
 
 def sandesh_url():
@@ -94,3 +95,4 @@ def sandesh_magazines():
                 pass    
     except:
         pass
+

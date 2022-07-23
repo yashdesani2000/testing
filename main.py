@@ -15,7 +15,7 @@ while True:
     sandesh = sandesh_date()
     # print(gs, sandesh, gs_today[0], sandesh_today[0])
     s.get('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/sendmessage?chat_id=1124985872&text='+str(gs)+' , '+str(sandesh)+' , '+str(gs_today[0])+' , '+str(sandesh_today[0]))
-    if gs_today[0] == gs:
+    if str(gs_today[0]) == str(gs):
         gs_today.clear()
         n = open('gujarat_samachar.webp', 'rb')
         file = {'sticker': n}
@@ -27,7 +27,7 @@ while True:
         gs_today.append(date.today()+timedelta(1))
     else:
         pass
-    if sandesh_today[0] == sandesh:
+    if str(sandesh_today[0]) == str(sandesh):
         sandesh_today.clear()
         n = open('sandesh.webp', 'rb')
         file = {'sticker': n}

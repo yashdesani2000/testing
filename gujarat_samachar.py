@@ -16,7 +16,7 @@ soup = BeautifulSoup(res.text,'lxml')
 all_news_papers = soup.find('div', id='ajax_data')
 
 def gs_date():
-    gs_dt = soup.find('script', type='text/javascript').text.split("$('span.date').text")[1].split(';')[0].strip('("")').split('-')
+    gs_dt = soup.find('div',id="tab1").div.div.find_all('div')[1].span.text.split('-')
     gs_date = gs_dt[2]+'-'+gs_dt[1]+'-'+gs_dt[0]
     return gs_date
 
