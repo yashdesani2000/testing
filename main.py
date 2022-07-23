@@ -7,8 +7,8 @@ import requests, time
 s = requests.Session()
 
 
-gs_today = ['2022-07-22']
-sandesh_today = ['2022-07-22'] 
+gs_today = ['2022-07-23']
+sandesh_today = ['2022-07-23'] 
 
 while True:
     gs = gs_date()
