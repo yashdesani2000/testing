@@ -41,7 +41,10 @@ def sandesh_main_edition():
                 try:
                     img_url = total_pages[i]['photo'].split('?w')[0]
                     res = s.get("https://esandesh.gumlet.io/"+img_url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                         pass
                 except:
                     pass    
 
@@ -79,7 +82,10 @@ def sandesh_magazines():
                     try:
                         img_url = total_pages[i]['photo'].split('?w')[0]
                         res = s.get("https://esandesh.gumlet.io/"+img_url)
-                        images.append(BytesIO(res.content))
+                        if res.status_code == int(200):
+                            images.append(BytesIO(res.content))
+                        else:
+                            pass
                     except:
                         pass    
 

@@ -51,7 +51,10 @@ def gs_main_edition():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
 
@@ -96,7 +99,10 @@ def gs_district_edition():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             
@@ -143,7 +149,10 @@ def gs_magazines():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
@@ -168,7 +177,10 @@ def gs_magazines():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
@@ -193,7 +205,10 @@ def gs_magazines():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
@@ -218,7 +233,10 @@ def gs_magazines():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
@@ -243,7 +261,10 @@ def gs_magazines():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
@@ -268,7 +289,10 @@ def gs_magazines():
                 try:
                     url = base_page_url+str(p)+'.jpg'
                     res = s.get(url)
-                    images.append(BytesIO(res.content))
+                    if res.status_code == int(200):
+                        images.append(BytesIO(res.content))
+                    else:
+                        pass    
                 except:
                     pass
             f = open(pdf_name+'_'+str(gs_date())+'.pdf', 'wb')
