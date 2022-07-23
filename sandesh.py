@@ -50,7 +50,7 @@ def sandesh_main_edition():
             f.close()
             n = open(pdf_name+'_'+str(sandesh_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(sandesh_date())+'.pdf')
     except:
@@ -88,7 +88,7 @@ def sandesh_magazines():
                 f.close()
                 n = open(pdf_name+'_'+str(sandesh_date())+'.pdf', 'rb')
                 file = {'document': n}
-                s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+                s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
                 n.close()
                 os.remove(pdf_name+'_'+str(sandesh_date())+'.pdf')
             else:

@@ -60,7 +60,7 @@ def gs_main_edition():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
     except:
@@ -105,7 +105,7 @@ def gs_district_edition():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
     except:
@@ -151,7 +151,7 @@ def gs_magazines():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
@@ -176,7 +176,7 @@ def gs_magazines():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
@@ -201,7 +201,7 @@ def gs_magazines():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
@@ -226,7 +226,7 @@ def gs_magazines():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
@@ -251,7 +251,7 @@ def gs_magazines():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
 
@@ -276,7 +276,7 @@ def gs_magazines():
             f.close()
             n = open(pdf_name+'_'+str(gs_date())+'.pdf', 'rb')
             file = {'document': n}
-            s.post('https://api.telegram.org/bot5501050196:AAGL4UdZEPszxSMPwgnBdXoViykBA8vy3c4/senddocument?chat_id=1124985872', files=file)
+            s.post('https://api.telegram.org/bot5501050196:AAGFQGBwl-onidmMPqPmVF2VZI_2rHwyNoU/senddocument?chat_id=1124985872', files=file)
             n.close()
             os.remove(pdf_name+'_'+str(gs_date())+'.pdf')
     except:
